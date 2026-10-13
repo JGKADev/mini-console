@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- A small hand-written profile for the tests: four faders (Mic, Music, Chat, System), every
+     mute button muting to all, the cough button in hold mode, submix off. -->
+<ValueTreeRoot version="2">
+  <mixRoutingTree headphone="1" lineout="1" chat="1" sampler="1" stream="1"/>
+  <submixerTree submixMode="0" micLevel="127" chatLevel="127" musicLevel="127" gameLevel="127"
+                consoleLevel="127" lineInLevel="127" systemLevel="127" sampleLevel="127">
+    <linkingTree micLinked="1" chatLinked="1" musicLinked="1" gameLinked="1" consoleLinked="1"
+                 lineInLinked="1" systemLinked="1" sampleLinked="1" micRatio="1.0" chatRatio="1.0"
+                 musicRatio="1.0" gameRatio="1.0" consoleRatio="1.0" lineInRatio="1.0"
+                 systemRatio="1.0" sampleRatio="1.0"/>
+  </submixerTree>
+  <mixerTree micLevel="200" chatLevel="180" musicLevel="160" gameLevel="140" consoleLevel="120"
+             lineInLevel="100" systemLevel="90" sampleLevel="80" headphoneLevel="230"
+             mic2headphoneSubLevel="0" lineOutLevel="210"
+             micToHP="0" micToStream="8192" micToChat="8192" micToSampler="8192" micToLineOut="8192"
+             chatToHP="8192" chatToStream="8192" chatToChat="0" chatToSampler="0" chatToLineOut="8192"
+             musicToHP="8192" musicToStream="8192" musicToChat="0" musicToSampler="0" musicToLineOut="8192"
+             gameToHP="8192" gameToStream="8192" gameToChat="0" gameToSampler="0" gameToLineOut="8192"
+             consoleToHP="8192" consoleToStream="8192" consoleToChat="0" consoleToSampler="0" consoleToLineOut="8192"
+             lineInToHP="8192" lineInToStream="8192" lineInToChat="0" lineInToSampler="0" lineInToLineOut="8192"
+             systemToHP="8192" systemToStream="8192" systemToChat="0" systemToSampler="0" systemToLineOut="8192"
+             sampleToHP="8192" sampleToStream="8192" sampleToChat="8192" sampleToSampler="0" sampleToLineOut="8192"/>
+  <selectedContext selectedSampleStack="sampleStackA" selectedEffectBank="effects1"/>
+  <muteChat coughButtonToggleSetting="0" coughButtonMuteSourceSelection="0" blink="0" coughButtonIsOn="0"
+            muteChatstate="0" muteChatoffStyle="COLOUR2" muteChatcolour0="FF00A0FF" muteChatcolour1="FFFFFFFF"/>
+  <FaderMeter0 FaderMeter0listIndex="0" FaderMeter0colour0="FFFF0000" FaderMeter0colour1="FF00FF00" FaderMeter0Display="GRADIENT"/>
+  <FaderMeter1 FaderMeter1listIndex="2" FaderMeter1colour0="FF000000" FaderMeter1colour1="FF0040FF" FaderMeter1Display="TWO COLOR"/>
+  <FaderMeter2 FaderMeter2listIndex="1" FaderMeter2colour0="FF000000" FaderMeter2colour1="FF0040FF" FaderMeter2Display="METER"/>
+  <FaderMeter3 FaderMeter3listIndex="6" FaderMeter3colour0="FFFF0000" FaderMeter3colour1="FF00FF00" FaderMeter3Display="GRADIENT_METER"/>
+  <mute1 mute1state="0" mute1blink="0" mute1Function="Mute All" mute1offStyle="COLOUR2" mute1colour0="FFFFC000" mute1colour1="FF0040FF"/>
+  <mute2 mute2state="0" mute2blink="0" mute2Function="Mute All" mute2offStyle="COLOUR2" mute2colour0="FFFFC000" mute2colour1="FF0040FF"/>
+  <mute3 mute3state="0" mute3blink="0" mute3Function="Mute All" mute3offStyle="COLOUR2" mute3colour0="FFFFC000" mute3colour1="FF0040FF"/>
+  <mute4 mute4state="0" mute4blink="0" mute4Function="Mute All" mute4offStyle="COLOUR2" mute4colour0="FFFFC000" mute4colour1="FF0040FF"/>
+  <swear swearstate="0" swearoffStyle="COLOUR2" swearcolour0="FF0040FF" swearcolour1="FFFFFFFF"/>
+  <logoX logoXstate="0" logoXoffStyle="DIMMED" logoXcolour0="FF0040FF" logoXcolour1="FFFFFFFF"/>
+  <fxClear fxClearstate="0" fxClearoffStyle="DIMMED" fxClearcolour0="FF0040FF" fxClearcolour1="FFFFFFFF"/>
+  <animationTree animationMode="5"/>
+</ValueTreeRoot>
