@@ -99,15 +99,23 @@ Device page shows the exact list.
 - The WebView2 runtime. It's built into Windows 11, and on Windows 10 it comes with Microsoft Edge.
 
 ### Install
-Mini Console is built from source for now. Install Rust from [rustup.rs](https://rustup.rs) (choose
-the MSVC toolchain), then run this in PowerShell from this folder:
+Download the latest zip from the [Releases page](https://github.com/JGKADev/mini-console/releases),
+unzip it anywhere you like, and run `mini-console.exe`. There's no installer and nothing to set up.
+Settings and backups are kept in `%LOCALAPPDATA%\mini-console`.
+
+The app isn't code-signed, so the first time you run it Windows SmartScreen may say it "protected
+your PC". Click **More info**, then **Run anyway**.
+
+### Or build it yourself
+Install Rust from [rustup.rs](https://rustup.rs) (choose the MSVC toolchain), then run this in
+PowerShell from this folder:
 
 ```powershell
 .\install.ps1
 ```
 
 That builds the app and installs it to `%LOCALAPPDATA%\Programs\Mini Console`, with a Start menu
-shortcut. You don't need admin rights. Settings and backups are kept in `%LOCALAPPDATA%\mini-console`.
+shortcut. You don't need admin rights.
 
 ### Before you open it
 Only one app can control the Mini at a time, so **close the official GoXLR App first**, and turn
